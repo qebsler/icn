@@ -11,6 +11,7 @@
 
 body {
   background-color: #222222;
+  margin-bottom: 25vh;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 }
 
 img {
-  width: 162px;
-  height: 288px;
+  width: 189px;
+  height: auto;
   margin: 10px 10px 0 0;
 }
