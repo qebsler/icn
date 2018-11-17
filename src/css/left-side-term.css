@@ -8,12 +8,13 @@ li {
    display: block
 }
 
+ul li::before {
+   content: "C:\\Mesure> ";
+   font-weight: 600;
+}
+
 li:hover {
    color: #6969e9;
    text-decoration: underline;
    cursor: pointer;
-}
-
-ul li::before {
-   content: "C:\\> "
 }

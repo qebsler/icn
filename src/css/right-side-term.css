@@ -1,0 +1,37 @@
+section.bottom {
+   border-top: 1px solid #fff;
+   margin: 20px 10px;
+   padding: 15px 0;
+}
+
+p {line-height: 20px; line-break: 30px;}
+
+p.download::before {
+   content: "C:\\Mesure\\download> ";
+   font-weight: 600;
+}
+
+p.description::before {
+   content: "C:\\Mesure\\description> ";
+   font-weight: 600;
+}
+
+p.visuel::before {
+   content: "C:\\Mesure\\visuel> ";
+   font-weight: 600;
+}
+
+p.credits::before {
+   content: "C:\\Mesure\\credits> ";
+   font-weight: 600;
+}
+
+p.contact::before {
+   content: "C:\\Mesure\\contact> ";
+   font-weight: 600;
+}
+
+p.cu::before {
+   content: "C:\\Mesure\\CU> ";
+   font-weight: 600;
+}
