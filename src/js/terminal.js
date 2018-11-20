@@ -11,6 +11,7 @@ function terminal (element, term) {
          '<a href="assets/screen_2.png" target="_blank">screen_2.png</a><br>' +
          '<a href="assets/screen_3.png" target="_blank">screen_3.png</a><br>'
       }
+      if (e.target.id === 'download') window.open('assets/mesure.apk')
       p.innerHTML = text
       p.classList.add(e.target.id)
       term.appendChild(p)
