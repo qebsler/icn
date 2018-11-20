@@ -1,20 +1,18 @@
+/** add listener on the li element and append a paragraph in the terminal when a li is clicking
+ * @param {HTMLLIElement} element
+ * @param {HTMLElement} term */
 function terminal (element, term) {
   element.forEach(el => {
     el.addEventListener('click', (e) => {
-      let text
-      let p = document.createElement('p')
-      if (e.target.dataset.content !== 'images') {
-        text = '<span class="blue">' + e.target.textContent + '</span><br>' + e.target.dataset.content
-      } else {
-        text = '<span class="blue">' + e.target.textContent + '</span><br>' +
-         '<a href="assets/screen_1.png" target="_blank">screen_1.png</a><br>' +
-         '<a href="assets/screen_2.png" target="_blank">screen_2.png</a><br>' +
-         '<a href="assets/screen_3.png" target="_blank">screen_3.png</a><br>'
-      }
       if (e.target.id === 'download') window.open('assets/mesure.apk')
-      p.innerHTML = text
-      p.classList.add(e.target.id)
-      term.appendChild(p)
+      let p = document.createElement('p') // Create paragraph element
+      p.innerHTML = '<span class="blue">' +
+        e.target.textContent +
+        '</span><br>' +
+        e.target.dataset.content // define content of the paragraph with the data-attribute
+
+      p.classList.add(e.target.id) // add the class to the paragraph
+      term.appendChild(p) // append the paragraph at the terminal
     })
   })
 }
