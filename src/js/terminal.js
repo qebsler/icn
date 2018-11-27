@@ -4,7 +4,6 @@
 function terminal (element, term) {
   element.forEach(el => {
     el.addEventListener('click', (e) => {
-      if (e.target.id === 'download') window.open('assets/mesure.apk')
       let p = document.createElement('p') // Create paragraph element
       p.innerHTML = '<span class="blue">' +
         e.target.textContent +
