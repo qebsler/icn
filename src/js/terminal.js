@@ -1,3 +1,4 @@
+// version 1.0.4
 /** add listener on the li element and append a paragraph in the terminal when a li is clicking
  * @param {HTMLLIElement} element
  * @param {HTMLElement} term */
